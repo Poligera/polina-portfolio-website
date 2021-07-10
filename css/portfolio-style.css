@@ -8,7 +8,7 @@
 body {
   height: 100vh;
   max-width: 100%;
-  background: url("/polina-portfolio-website/images/robin-schreiner-sN3ZCrA7adY-unsplash.jpg") center
+  background: url("../images/robin-schreiner-sN3ZCrA7adY-unsplash.jpg") center
     center/cover no-repeat fixed;
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@ li a {
 }
 
 #overlayPortfolio {
-  background-color: rgba(196, 219, 182, 0.9);
+  background-color: rgba(124, 163, 102, 0.6);
   min-height: 100%;
   min-width: 100%;
   z-index: 2;
@@ -93,9 +93,14 @@ li a {
 }
 
 #proj1Photo {
-  background: url("/polina-portfolio-website/images/my_little_victories.png") center center/cover;
+  background: url("../images/my_little_victories.png") center center/cover;
   width: 100%;
   height: 100%;
+  border-radius: 10%;
+}
+
+#proj1 {
+  border: 5px rgb(233, 236, 233) solid;
 }
 
 #proj2 {
@@ -152,41 +157,40 @@ li a {
     margin-top: 5rem;
   }
 
+  /* Landscape only */
+  @media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    body {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
 
+    header {
+      top: 0.1vh;
+    }
 
-/* Landscape only */
-@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+    ul li {
+      margin: 0 0.4rem;
+    }
 
-  header {
-    top: 0.1vh;
-  }
+    #portfolio {
+      margin-top: 0;
+      top: 12vh;
+      height: 87%;
+    }
 
-  ul li {
-    margin: 0 0.4rem;
-  }
+    #announce {
+      padding: 0;
+    }
 
-  #portfolio {
-    margin-top: 0;
-    top: 12vh;
-    height: 87%;
-  }
-
-  #announce {
-    padding: 0;
-  }
-
-  #proj1,
-  #proj2,
-  #proj3,
-  #proj4 {
-    flex: 25%;
-    width: 40vw;
-    height: 25vh;
-    margin: 0;
+    #proj1,
+    #proj2,
+    #proj3,
+    #proj4 {
+      flex: 25%;
+      width: 40vw;
+      height: 25vh;
+      margin: 0;
+    }
   }
 }

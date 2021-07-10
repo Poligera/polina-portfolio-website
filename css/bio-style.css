@@ -10,11 +10,11 @@
   max-width: 100%;
   background: linear-gradient(
       0deg,
-      rgba(233, 74, 233, 0.5),
+      rgba(238, 130, 238, 0.5),
       rgba(110, 84, 110, 0.5)
     ),
-    url("./images/ali-arif-soydas-3ICVaI2uzfE-unsplash.jpg") center center/cover
-      no-repeat fixed;
+    url("../images/ali-arif-soydas-3ICVaI2uzfE-unsplash.jpg") center
+      center/cover no-repeat fixed;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   display: flex;
