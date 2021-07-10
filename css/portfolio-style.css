@@ -24,7 +24,8 @@ header {
   display: flex;
   position: absolute;
   top: 2vh;
-  z-index: 23;
+  z-index: 2;
+  font-weight: bold;
 }
 
 header nav {
@@ -125,10 +126,6 @@ li a {
 /* MEDIA QUERIES
   Portrait and landscape*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-  body {
-    display: flex;
-  }
-
   header nav ul {
     font-size: 1.2rem;
     flex-wrap: wrap;
@@ -148,49 +145,29 @@ li a {
   #proj2,
   #proj3,
   #proj4 {
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-bottom: 1rem;
-  }
-
-  #proj1 {
-    margin-top: 5rem;
+    height: 50vh;
   }
 
   /* Landscape only */
   @media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    body {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-
-    header {
-      top: 0.1vh;
-    }
-
     ul li {
-      margin: 0 0.4rem;
+      margin: 0 0.6rem;
     }
 
     #portfolio {
-      margin-top: 0;
-      top: 12vh;
-      height: 87%;
-    }
-
-    #announce {
-      padding: 0;
+      grid-template-columns: auto auto;
     }
 
     #proj1,
     #proj2,
     #proj3,
     #proj4 {
-      flex: 25%;
-      width: 40vw;
-      height: 25vh;
-      margin: 0;
+      width: 42vw;
+      height: 75vh;
+      margin: 1rem;
     }
   }
 }
