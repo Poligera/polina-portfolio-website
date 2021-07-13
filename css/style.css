@@ -72,14 +72,14 @@ img {
   border-radius: 30%;
   border: 4px white solid;
   position: absolute;
-  top: 40vh;
+  top: 30vh;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   position: absolute;
-  top: 65vh;
+  top: 55vh;
 }
 
 ul {
