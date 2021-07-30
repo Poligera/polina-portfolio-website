@@ -65,15 +65,11 @@ li a {
   display: grid;
   /* grid-template-rows: main; */
   grid-template-areas: "#proj1 #proj2 #proj3 #proj4";
-  grid-template-columns: auto auto auto auto;
-  height: 70%;
-  width: 95%;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: 90%;
+  width: 97%;
   position: absolute;
   top: 20vh;
-  /* flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  align-self: center; */
   z-index: 3;
 }
 
@@ -88,26 +84,31 @@ li a {
   color: azure;
   font-size: 1.5rem;
   text-align: center;
-  width: 22vw;
-  height: 44vh;
+  width: 20vw;
+  height: 45vh;
   border-radius: 10%;
 }
 
 #proj1Photo {
   background: url("../images/my_little_victories.png") center center/cover;
-  width: 100%;
+  width: auto;
   height: 100%;
+  margin: auto;
   border-radius: 10%;
 }
 
-#proj1 {
-  border: 5px rgb(233, 236, 233) solid;
+
+#proj2Photo {
+  background: url("../images/habitude-app.png") center center/cover;
+  width: auto;
+  height: 100%;
+  margin: auto;
+  border-radius: 10%;
 }
 
 #proj2 {
-  background: url("https://sun9-54.userapi.com/impg/zePy1DTckFDT5Nwv4ULkHBJOYXXUZqx1_nnT-Q/xOvre6IX17M.jpg?size=1110x1920&quality=96&sign=06619be6390f9caee464e7ff91e5d1f5&type=album")
-    center center/cover;
   margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 #proj3 {
@@ -145,10 +146,10 @@ li a {
   #proj2,
   #proj3,
   #proj4 {
-    width: 90%;
+    width: 95%;
     margin: auto;
-    margin-bottom: 1rem;
-    height: 50vh;
+    margin-bottom: 2rem;
+    height: 60vh;
   }
 
   /* Landscape only */
@@ -165,9 +166,10 @@ li a {
     #proj2,
     #proj3,
     #proj4 {
-      width: 42vw;
-      height: 75vh;
-      margin: 1rem;
+      width: 37vw;
+      height: 80vh;
+      margin: auto;
+      margin-bottom: 2rem;
     }
   }
 }
