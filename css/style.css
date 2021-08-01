@@ -5,10 +5,22 @@
   scroll-behavior: smooth;
 }
 
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/valentina-aleksandrovna-BExYKIjiPQE-unsplash\ -\ Copy.jpg");
+  background-position-y: center;
+  background-size: cover;
+  z-index: -2;
+}
+
 body {
-  min-height: 100%;
-  background: url("../images/valentina-aleksandrovna-BExYKIjiPQE-unsplash\ -\ Copy.jpg")
-    center center/cover no-repeat fixed;
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,16 +28,17 @@ body {
   font-size: 15px;
   font-family: "Garamond";
   overflow: hidden;
+  z-index: 1;
 }
 
-html::after {
+body::after {
   content: "";
+  background: rgba(61, 172, 182, 0.5);
+  z-index: -1;
   height: 100%;
   width: 100%;
-  background: rgb(61, 172, 182, 0.5);
-  z-index: -1;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -95,6 +108,7 @@ li {
 li a {
   color: white;
   text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
@@ -107,18 +121,18 @@ a:hover {
 /* Portrait and landscape*/
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-  body {
-    background: none;
-    background-color: rgb(163, 184, 177);
+  body::before {
+    left: -65vw;
+    bottom: -25vh;
   }
 
-  html::after {
-    display: none;
+  body::after {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
   }
 
   header {
     top: 3vh;
-    color: teal;
   }
 
   header h1 {
@@ -130,8 +144,8 @@ a:hover {
   }
 
   img {
-    width: 7rem;
-    top: 3vh;
+    width: 6rem;
+    top: -3vh;
   }
 
   main {
@@ -140,7 +154,7 @@ a:hover {
 
   nav {
     flex-direction: column;
-    top: 30vh;
+    top: 32vh;
   }
 
   ul {
@@ -149,16 +163,18 @@ a:hover {
   }
 
   ul li {
-    margin: 2vh;
+    margin: 1.7vh;
   }
 
-  ul li a {
-    color: white;
+  li a {
+    font-weight: 700;
   }
 }
 
 /* Landscape only */
 @media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+
   main {
     display: flex;
     position: relative;
@@ -172,19 +188,28 @@ a:hover {
   img {
     position: relative;
     flex-direction: column;
-    top: 3vh;
-    width: 50vh;
+    top: -3vh;
+    width: 40vh;
   }
 
   nav {
     position: relative;
     flex-direction: column;
-    top: 7vh;
+    top: 1vh;
     font-size: 1.2rem;
     margin-bottom: 2rem;
   }
+
+   ul li{
+    margin-bottom: 3vh;
+  }
 }
 
-/* iPads
+/* iPads */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-} */
+
+  img {
+    top: -2vh;
+  }
+
+}
