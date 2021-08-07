@@ -111,10 +111,17 @@ li a {
   margin-bottom: 10vh;
 }
 
+#proj3Photo {
+  background: url("../images/Weather_React.png") center center/cover;
+  width: auto;
+  height: 100%;
+  margin: auto;
+  border-radius: 10%;
+}
+
 #proj3 {
-  background: url("https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mjh8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80")
-    center center/cover;
   margin-top: 20vh;
+  margin-bottom: 10vh;
 }
 
 #proj4 {
