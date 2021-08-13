@@ -124,11 +124,17 @@ li a {
   margin-bottom: 10vh;
 }
 
-#proj4 {
-  border: 8px dashed;
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9CD9v1-FcEI1UAKSlyO0KnOBr3Q0FC3TePw&usqp=CAU")
-    center center/cover;
+#proj4Photo {
+  background: url("../images/GitHub_Repo_Tracker.png") center center/cover;
+  width: auto;
+  height: 100%;
+  margin: auto;
+  border-radius: 10%;
   margin-top: 30vh;
+}
+
+#proj4 {
+  margin-bottom: 10vh;
 }
 
 /* MEDIA QUERIES
